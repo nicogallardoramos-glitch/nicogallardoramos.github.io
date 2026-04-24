@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NICO | PORTFOLIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <header class="hero" id="top">
+
+    <div class="maze-rail top-rail"></div>
+
+    <!-- Score bar -->
+    <div class="score-bar">
+      <div class="score-group">
+        <span class="score-label">1UP</span>
+        <span class="score-val">013</span>
+      </div>
+      <span class="score-label">HIGH SCORE</span>
+      <div class="score-group">
+        <span class="score-label">2UP</span>
+        <span class="score-val">000</span>
+      </div>
+    </div>
+
+    <!-- PACMAN animation row -->
+    <div class="pac-row" id="pac-row">
+      <div class="pac-man" id="pac-man"></div>
+      <div class="pac-dots" id="pac-dots"></div>
+    </div>
+
+    <!-- Main hero content: iPhone avatar + text -->
+    <div class="hero-body">
+
+      <div class="iphone-frame">
+        <div class="iphone-notch">
+          <div class="notch-camera"></div>
+        </div>
+        <div class="iphone-screen">
+          <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" class="avatar-svg">
+            <circle cx="50" cy="40" r="26" fill="#FFD700"/>
+            <path d="M12,120 Q12,75 50,75 Q88,75 88,120" fill="#FFD700"/>
+          </svg>
+        </div>
+        <div class="iphone-home-bar"></div>
+      </div>
+
+      <div class="hero-text">
+        <p class="player-tag">// PLAYER 1 //</p>
+        <h1 class="hero-name">NICO</h1>
+        <h2 class="hero-fullname">NICOLE DALE RAMOS</h2>
+        <p class="hero-role">EXECUTIVE ASSISTANT<br>&amp; PROJECT MANAGER</p>
+        <div class="hero-stats">
+          <div class="hstat">
+            <div class="hstat-val">13+</div>
+            <div class="hstat-key">YRS EXP</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-val">10+</div>
+            <div class="hstat-key">CONTACT CTR</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-val">3+</div>
+            <div class="hstat-key">EA &amp; PM</div>
+          </div>
+        </div>
+        <a href="#about" class="press-start blink">&#9654; PRESS START &#9664;</a>
+      </div>
+
+    </div>
+
+    <!-- Ghost parade -->
+    <div class="ghost-parade">
+
+      <div class="ghost-wrap" style="--delay:0s">
+        <svg class="ghost-svg" viewBox="0 0 40 52" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2,22 Q2,0 20,0 Q38,0 38,22 L38,52 Q32,44 26,52 Q20,44 14,52 Q8,44 2,52 Z" fill="#FF0000"/>
+          <ellipse cx="14" cy="19" rx="5.5" ry="7" fill="white"/>
+          <ellipse cx="26" cy="19" rx="5.5" ry="7" fill="white"/>
+          <circle cx="16" cy="21" r="3.5" fill="#1a1aff"/>
+          <circle cx="28" cy="21" r="3.5" fill="#1a1aff"/>
+        </svg>
+        <span class="ghost-label" style="color:#FF0000">BLINKY</span>
+      </div>
+
+      <div class="ghost-wrap" style="--delay:0.4s">
+        <svg class="ghost-svg" viewBox="0 0 40 52" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2,22 Q2,0 20,0 Q38,0 38,22 L38,52 Q32,44 26,52 Q20,44 14,52 Q8,44 2,52 Z" fill="#FFB8FF"/>
+          <ellipse cx="14" cy="19" rx="5.5" ry="7" fill="white"/>
+          <ellipse cx="26" cy="19" rx="5.5" ry="7" fill="white"/>
+          <circle cx="16" cy="21" r="3.5" fill="#1a1aff"/>
+          <circle cx="28" cy="21" r="3.5" fill="#1a1aff"/>
+        </svg>
+        <span class="ghost-label" style="color:#FFB8FF">PINKY</span>
+      </div>
+
+      <div class="ghost-wrap" style="--delay:0.8s">
+        <svg class="ghost-svg" viewBox="0 0 40 52" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2,22 Q2,0 20,0 Q38,0 38,22 L38,52 Q32,44 26,52 Q20,44 14,52 Q8,44 2,52 Z" fill="#00FFFF"/>
+          <ellipse cx="14" cy="19" rx="5.5" ry="7" fill="white"/>
+          <ellipse cx="26" cy="19" rx="5.5" ry="7" fill="white"/>
+          <circle cx="16" cy="21" r="3.5" fill="#1a1aff"/>
+          <circle cx="28" cy="21" r="3.5" fill="#1a1aff"/>
+        </svg>
+        <span class="ghost-label" style="color:#00FFFF">INKY</span>
+      </div>
+
+      <div class="ghost-wrap" style="--delay:1.2s">
+        <svg class="ghost-svg" viewBox="0 0 40 52" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2,22 Q2,0 20,0 Q38,0 38,22 L38,52 Q32,44 26,52 Q20,44 14,52 Q8,44 2,52 Z" fill="#FFB851"/>
+          <ellipse cx="14" cy="19" rx="5.5" ry="7" fill="white"/>
+          <ellipse cx="26" cy="19" rx="5.5" ry="7" fill="white"/>
+          <circle cx="16" cy="21" r="3.5" fill="#1a1aff"/>
+          <circle cx="28" cy="21" r="3.5" fill="#1a1aff"/>
+        </svg>
+        <span class="ghost-label" style="color:#FFB851">CLYDE</span>
+      </div>
+
+    </div>
+
+    <div class="maze-rail bottom-rail"></div>
+  </header>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="main-nav" id="main-nav">
+    <a href="#about"      class="nav-link">ABOUT</a>
+    <a href="#skills"     class="nav-link">SKILLS</a>
+    <a href="#experience" class="nav-link">XP</a>
+    <a href="#projects"   class="nav-link">PROJECTS</a>
+    <a href="#contact"    class="nav-link">CONTACT</a>
+  </nav>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <svg class="sec-ghost" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1,17 Q1,0 15,0 Q29,0 29,17 L29,40 Q24,33 19,40 Q15,33 11,40 Q7,33 1,40 Z" fill="#FF0000"/>
+          <ellipse cx="10" cy="14" rx="4" ry="5.5" fill="white"/>
+          <ellipse cx="20" cy="14" rx="4" ry="5.5" fill="white"/>
+          <circle cx="11.5" cy="16" r="2.5" fill="#1a1aff"/>
+          <circle cx="21.5" cy="16" r="2.5" fill="#1a1aff"/>
+        </svg>
+        <h2>// ABOUT //</h2>
+      </div>
+
+      <div class="about-layout">
+        <p class="about-bio">
+          Dedicated professional with 13+ years of experience in executive support,
+          project management, and customer-facing roles. Spent 10+ years as a Contact
+          Center Representative building expertise in client relations and issue
+          resolution, then transitioned into an Executive Assistant &amp; Project Manager
+          role — driving projects from start to finish, and managing complex priorities.
+        </p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="snum">13+</div>
+            <div class="slabel">YRS EXPERIENCE</div>
+          </div>
+          <div class="stat-card">
+            <div class="snum">10+</div>
+            <div class="slabel">YRS CONTACT CTR</div>
+          </div>
+          <div class="stat-card">
+            <div class="snum">3+</div>
+            <div class="slabel">YRS EA &amp; PM</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <svg class="sec-ghost" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1,17 Q1,0 15,0 Q29,0 29,17 L29,40 Q24,33 19,40 Q15,33 11,40 Q7,33 1,40 Z" fill="#FFB8FF"/>
+          <ellipse cx="10" cy="14" rx="4" ry="5.5" fill="white"/>
+          <ellipse cx="20" cy="14" rx="4" ry="5.5" fill="white"/>
+          <circle cx="11.5" cy="16" r="2.5" fill="#1a1aff"/>
+          <circle cx="21.5" cy="16" r="2.5" fill="#1a1aff"/>
+        </svg>
+        <h2>// SKILLS //</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-pill"><span class="pellet">&#9679;</span> WORDPRESS</div>
+        <div class="skill-pill"><span class="pellet">&#9679;</span> CHATGPT / CLAUDE AI</div>
+        <div class="skill-pill"><span class="pellet">&#9679;</span> PROJECT MANAGEMENT</div>
+        <div class="skill-pill"><span class="pellet">&#9679;</span> EXECUTIVE SUPPORT</div>
+        <div class="skill-pill"><span class="pellet">&#9679;</span> CLIENT RELATIONS</div>
+        <div class="skill-pill"><span class="pellet">&#9679;</span> ISSUE RESOLUTION</div>
+        <div class="skill-pill skill-soon"><span class="pellet blink">&#9679;</span> MORE COMING...</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE
+  ============================================================ -->
+  <section id="experience" class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <svg class="sec-ghost" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1,17 Q1,0 15,0 Q29,0 29,17 L29,40 Q24,33 19,40 Q15,33 11,40 Q7,33 1,40 Z" fill="#00FFFF"/>
+          <ellipse cx="10" cy="14" rx="4" ry="5.5" fill="white"/>
+          <ellipse cx="20" cy="14" rx="4" ry="5.5" fill="white"/>
+          <circle cx="11.5" cy="16" r="2.5" fill="#1a1aff"/>
+          <circle cx="21.5" cy="16" r="2.5" fill="#1a1aff"/>
+        </svg>
+        <h2>// EXPERIENCE //</h2>
+      </div>
+
+      <div class="xp-timeline">
+
+        <div class="xp-item">
+          <div class="xp-badge">
+            <div class="xp-badge-label">LEVEL</div>
+            <div class="xp-badge-num">02</div>
+          </div>
+          <div class="xp-body">
+            <h3 class="xp-title">EXECUTIVE ASSISTANT &amp; PROJECT MANAGER</h3>
+            <p class="xp-duration">3+ YEARS</p>
+            <ul class="xp-list">
+              <li>Driving projects from start to finish</li>
+              <li>Managing complex priorities for executive leadership</li>
+              <li>Coordinating cross-functional teams and stakeholders</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="xp-item">
+          <div class="xp-badge">
+            <div class="xp-badge-label">LEVEL</div>
+            <div class="xp-badge-num">01</div>
+          </div>
+          <div class="xp-body">
+            <h3 class="xp-title">CONTACT CENTER REPRESENTATIVE</h3>
+            <p class="xp-duration">9 YEARS</p>
+            <ul class="xp-list">
+              <li>Built deep expertise in client relations</li>
+              <li>Issue resolution and escalation management</li>
+              <li>Consistent customer satisfaction delivery</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+  ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <svg class="sec-ghost" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1,17 Q1,0 15,0 Q29,0 29,17 L29,40 Q24,33 19,40 Q15,33 11,40 Q7,33 1,40 Z" fill="#FFB851"/>
+          <ellipse cx="10" cy="14" rx="4" ry="5.5" fill="white"/>
+          <ellipse cx="20" cy="14" rx="4" ry="5.5" fill="white"/>
+          <circle cx="11.5" cy="16" r="2.5" fill="#1a1aff"/>
+          <circle cx="21.5" cy="16" r="2.5" fill="#1a1aff"/>
+        </svg>
+        <h2>// PROJECTS //</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="proj-card">
+          <div class="proj-top">
+            <svg class="proj-ghost" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1,17 Q1,0 15,0 Q29,0 29,17 L29,40 Q24,33 19,40 Q15,33 11,40 Q7,33 1,40 Z" fill="#FF0000"/>
+              <ellipse cx="10" cy="14" rx="4" ry="5.5" fill="white"/>
+              <ellipse cx="20" cy="14" rx="4" ry="5.5" fill="white"/>
+              <circle cx="11.5" cy="16" r="2.5" fill="#1a1aff"/>
+              <circle cx="21.5" cy="16" r="2.5" fill="#1a1aff"/>
+            </svg>
+            <span class="proj-badge">SALESFORCE</span>
+          </div>
+          <h3 class="proj-name">TRINITY CHURCH BOSTON</h3>
+          <p class="proj-desc">Salesforce development and digital support for a leading Boston faith community.</p>
+          <a href="http://trinitychurchboston.org/" target="_blank" rel="noopener" class="proj-btn">&#9654; VIEW SITE</a>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-top">
+            <svg class="proj-ghost" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1,17 Q1,0 15,0 Q29,0 29,17 L29,40 Q24,33 19,40 Q15,33 11,40 Q7,33 1,40 Z" fill="#FFB8FF"/>
+              <ellipse cx="10" cy="14" rx="4" ry="5.5" fill="white"/>
+              <ellipse cx="20" cy="14" rx="4" ry="5.5" fill="white"/>
+              <circle cx="11.5" cy="16" r="2.5" fill="#1a1aff"/>
+              <circle cx="21.5" cy="16" r="2.5" fill="#1a1aff"/>
+            </svg>
+            <span class="proj-badge">SALESFORCE</span>
+          </div>
+          <h3 class="proj-name">iCOMMUNITY HEALTH</h3>
+          <p class="proj-desc">Salesforce development and digital solutions for community health services.</p>
+          <a href="https://icommunityhealth.org/" target="_blank" rel="noopener" class="proj-btn">&#9654; VIEW SITE</a>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-top">
+            <svg class="proj-ghost" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1,17 Q1,0 15,0 Q29,0 29,17 L29,40 Q24,33 19,40 Q15,33 11,40 Q7,33 1,40 Z" fill="#00FFFF"/>
+              <ellipse cx="10" cy="14" rx="4" ry="5.5" fill="white"/>
+              <ellipse cx="20" cy="14" rx="4" ry="5.5" fill="white"/>
+              <circle cx="11.5" cy="16" r="2.5" fill="#1a1aff"/>
+              <circle cx="21.5" cy="16" r="2.5" fill="#1a1aff"/>
+            </svg>
+            <span class="proj-badge">SALESFORCE</span>
+          </div>
+          <h3 class="proj-name">WOMEN'S MONEY MATTERS</h3>
+          <p class="proj-desc">Salesforce development and web support for a nonprofit focused on women's financial independence.</p>
+          <a href="https://womensmoneymatters.org/" target="_blank" rel="noopener" class="proj-btn">&#9654; VIEW SITE</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+
+      <div class="section-title centered">
+        <h2>// CONTACT //</h2>
+      </div>
+
+      <div class="contact-box">
+        <p class="game-over blink">GAME OVER?</p>
+        <p class="continue-txt">CONTINUE WITH:</p>
+
+        <!-- EDIT: Replace the email address below with your real email -->
+        <a href="nicogallardoramos@gmai.com" class="contact-email">
+          &#9993;&nbsp; YOUR@EMAIL.COM
+        </a>
+
+        <p class="contact-hint">&#8592; swap this email with yours in index.html</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-track">
+      <div class="footer-pac"></div>
+      <div class="footer-dots" id="footer-dots"></div>
+    </div>
+    <p class="footer-copy">&copy; 2025 NICO // NICOLE DALE RAMOS // ALL RIGHTS RESERVED</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
