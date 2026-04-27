@@ -64,47 +64,6 @@ body {
 .score-label { font-size: 9px; color: var(--white); }
 .score-val   { color: var(--yellow); font-size: 13px; }
 
-/* --- PACMAN row --- */
-.pac-row {
-  width: 100%;
-  height: 44px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.pac-man {
-  width: 38px;
-  height: 38px;
-  background: var(--yellow);
-  border-radius: 50%;
-  position: absolute;
-  left: -50px;
-  z-index: 2;
-  animation: pacMove 4s linear infinite, pacMunch 0.25s ease-in-out infinite;
-}
-
-@keyframes pacMove {
-  0%   { left: -50px; }
-  100% { left: 110%; }
-}
-
-@keyframes pacMunch {
-  0%, 100% { clip-path: polygon(100% 33%, 58% 50%, 100% 67%, 0 100%, 0 0); }
-  50%       { clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); }
-}
-
-.pac-dots {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  padding: 0 54px;
-  pointer-events: none;
-}
-
 .dot {
   width: 7px; height: 7px;
   background: var(--white);

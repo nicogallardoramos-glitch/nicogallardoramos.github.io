@@ -17,31 +17,7 @@ function buildDots(containerId, trackId) {
   }
 }
 
-buildDots('pac-dots',    'pac-row');
 buildDots('footer-dots', 'footer-track');
-
-/* ============================================================
-   PACMAN EATS DOTS
-============================================================ */
-function initEating(pacId, dotsContainerId) {
-  var pacMan = document.getElementById(pacId);
-  var dots   = document.querySelectorAll('#' + dotsContainerId + ' .dot, #' + dotsContainerId + ' .power-pill');
-  if (!pacMan || dots.length === 0) return;
-
-  setInterval(function () {
-    var pacRect = pacMan.getBoundingClientRect();
-    dots.forEach(function (dot) {
-      var dotRect = dot.getBoundingClientRect();
-      if (pacRect.right > dotRect.left + 4 && pacRect.left < dotRect.right) {
-        dot.style.opacity = '0';
-      } else if (pacRect.left > dotRect.right + 20) {
-        dot.style.opacity = '1';
-      }
-    });
-  }, 40);
-}
-
-initEating('pac-man', 'pac-dots');
 
 /* ============================================================
    ACTIVE NAV ON SCROLL
